@@ -1,6 +1,10 @@
-# 블로그 주소
+# HelloC's Study
 
-https://helloc.tistory.com
+개발 공부를 하면서 작성한 글들을 모아놓은 저장소입니다.
+
+## 블로그 주소
+
+<https://helloc.tistory.com>
 
 ## 작성 글 목록
 
