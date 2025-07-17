@@ -1,11 +1,11 @@
-## Redis란 무엇인가?
+# Redis란 무엇인가?
 
 Redis는 오픈 소스 BSD 라이선스로 배포되는 **인메모리 데이터 구조 저장소**로, 데이터베이스, 캐시, 메시지 브로커 등으로 사용할 수 있습니다. 문자열(String), 해시(Hashes), 리스트(Lists), 셋(Sets), 정렬된 셋(Sorted Sets), 비트맵(Bitmaps), 하이퍼로그로그(HyperLogLogs), 지리공간 인덱스(Geospatial Indexes), 스트림(Streams) 등 다양한 네이티브 데이터 타입을 지원하여 높은 유연성과 성능을 제공합니다 [redis-doc-test.readthedocs.io](https://redis-doc-test.readthedocs.io/en/latest/topics/introduction/?utm_source=chatgpt.com)[Redis](https://redis.io/docs/latest/develop/data-types/?utm_source=chatgpt.com).
 
 - **주요 특징**:
-    - 모든 데이터를 RAM에 저장해 디스크 I/O 없이 초당 수십만 건의 읽기/쓰기 처리 가능
-    - 다양한 내장 데이터 구조를 통해 복잡한 로직을 간결한 코드로 구현
-    - Redis Sentinel, Redis Cluster로 고가용성(HA) 및 자동 샤딩(파티셔닝) 지원 [redis-doc-test.readthedocs.io](https://redis-doc-test.readthedocs.io/en/latest/topics/introduction/?utm_source=chatgpt.com)
+  - 모든 데이터를 RAM에 저장해 디스크 I/O 없이 초당 수십만 건의 읽기/쓰기 처리 가능
+  - 다양한 내장 데이터 구조를 통해 복잡한 로직을 간결한 코드로 구현
+  - Redis Sentinel, Redis Cluster로 고가용성(HA) 및 자동 샤딩(파티셔닝) 지원 [redis-doc-test.readthedocs.io](https://redis-doc-test.readthedocs.io/en/latest/topics/introduction/?utm_source=chatgpt.com)
 
 ---
 
@@ -38,9 +38,6 @@ Redis는 오픈 소스 BSD 라이선스로 배포되는 **인메모리 데이터
 7. **지리공간 질의 (Geospatial Queries)**
 
    반경 검색, 좌표 기반 정렬 등 지리공간 인덱스를 활용한 위치 기반 서비스를 구현합니다 [redis-doc-test.readthedocs.io](https://redis-doc-test.readthedocs.io/en/latest/topics/introduction/?utm_source=chatgpt.com).
-
-
----
 
 ## 실무에서 자주 발생하는 이슈 및 트러블슈팅
 

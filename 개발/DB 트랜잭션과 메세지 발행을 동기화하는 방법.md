@@ -1,11 +1,13 @@
+# DB 트랜잭션과 메세지 발행을 동기화하는 방법
+
 회사에서 개발 중인 서비스에는 수신한 데이터를 분석하여 알람을 발생시키는 기능이 있다. 이때 `@Transactional` 로 묶인 하나의 메서드에서 다음과 같이 발생한 알람을 저장하고, 이벤트를 발행한다. 발행된 이벤트는 이벤트 리스너에서 수신하여 알람을 받아야하는 수신자들에게 발송한다.
 
 ```jsx
 @Transactional
 public void saveAndSendAlarm(Alarm alarm) {
-	saveAlarm(alarm);
-	Event event = new SaveAlarmEvent(alarm.getId());
-	Events.raise(event);
+    saveAlarm(alarm);
+    Event event = new SaveAlarmEvent(alarm.getId());
+    Events.raise(event);
 }
 
 @EventListner
@@ -132,7 +134,7 @@ CREATE TABLE message_outbox (
 
 ### 3.2. 구체적 구현 예제 (ex. 주문 프로세스)
 
-**Outbox 테이블 스키마**
+#### Outbox 테이블 스키마
 
 ```sql
 CREATE TABLE message_outbox (
@@ -145,7 +147,7 @@ CREATE TABLE message_outbox (
 );
 ```
 
-**JPA 엔티티 & 리포지토리**
+### JPA 엔티티 & 리포지토리
 
 ```java
 @Entity
@@ -168,7 +170,7 @@ public interface OutboxRepository extends JpaRepository<OutboxMessage, Long> {
 }
 ```
 
-**서비스 레이어: DB 작업 + Outbox INSERT**
+#### 서비스 레이어: DB 작업 + Outbox INSERT
 
 ```java
 @Service
@@ -193,7 +195,7 @@ public class OrderService {
 }
 ```
 
-**Outbox 폴링 스케줄러**
+#### Outbox 폴링 스케줄러
 
 ```java
 @Component
