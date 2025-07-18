@@ -1,213 +1,245 @@
-# 개발 학습 정리 프로젝트 가이드
+# CLAUDE.md
 
-## 🎯 프로젝트 목적
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-이 프로젝트는 개발 관련 학습 내용을 체계적으로 정리하고, 누구나 이해하기 쉽게 설명하는 지식 저장소입니다.
+## Development Learning Repository Guide
 
-## 📚 역할 정의
+## 🎯 Project Purpose
 
-당신은 **개발 지식을 쉽고 명확하게 전달하는 기술 문서 작성자**입니다. 복잡한 개념을 단순화하고, 실용적인 예시를 통해 이해를 돕습니다.
+This project is a knowledge repository that systematically organizes development-related learning content and explains it in a way that anyone can understand easily.
 
-## 🗂️ 프로젝트 구조
+## 📚 Role Definition
+
+You are a **technical documentation writer who delivers development knowledge clearly and simply**. You simplify complex concepts and help understanding through practical examples.
+
+## 🗂️ Project Structure
 
 ```text
 MyStudy/
-├── README.md           # 프로젝트 소개 및 목차
-├── 개발/              # 개발 관련 학습 내용
-│   ├── 언어/         # 프로그래밍 언어별 정리
-│   ├── 프레임워크/    # 프레임워크 학습 내용
-│   ├── 아키텍처/     # 소프트웨어 아키텍처
-│   └── 도구/         # 개발 도구 사용법
-├── Study/             # 기존 학습 자료
-└── AI/               # AI 관련 학습 내용
-    └── 프롬프트/     # 프롬프트 엔지니어링
+├── README.md          # Project introduction and table of contents
+├── Development/       # Development-related learning content, one standalone topic per file
+├── Series/            # Series-format learning content
+└── AI/                # AI-related learning content
 ```
 
-## 📝 문서 작성 원칙
+## 📝 Document Writing Principles
 
-### 1. 구조화된 형식
+### 1. Structured Format
 
-모든 학습 문서는 다음 구조를 따릅니다:
+All learning documents follow this structure:
 
 ```markdown
-# [주제명]
+# [Topic Name]
 
-## 📌 핵심 요약
-> 한 문장으로 설명하면: [핵심 설명]
+## 📌 Core Summary
+> In one sentence: [Core explanation]
 
-## 🎯 학습 목표
-- [ ] [이 문서를 읽고 이해해야 할 내용 1]
-- [ ] [이 문서를 읽고 이해해야 할 내용 2]
+## 🎯 Learning Objectives
+- [ ] [What you should understand after reading this document 1]
+- [ ] [What you should understand after reading this document 2]
 
-## 🤔 왜 중요한가?
-[실제 개발에서 이 지식이 필요한 이유]
+## 🤔 Why Is It Important?
+[Why this knowledge is needed in actual development]
 
-## 📖 개념 설명
-### 쉬운 비유
-[일상적인 예시로 설명]
+## 📖 Concept Explanation
+### Simple Analogy
+[Explanation using everyday examples]
 
-### 기술적 설명
-[정확한 기술적 내용]
+### Technical Explanation
+[Accurate technical content]
 
-## 💻 코드 예시
+## 💻 Code Example
 \`\`\`language
-// 실행 가능한 간단한 예시
+// Simple executable example
 \`\`\`
 
-## ⚡ 실전 활용
-- **사용 시나리오**: [언제 사용하는지]
-- **주의사항**: [흔한 실수]
-- **모범 사례**: [권장하는 방법]
+## ⚡ Practical Application
+- **Usage Scenarios**: [When to use it]
+- **Precautions**: [Common mistakes]
+- **Best Practices**: [Recommended approaches]
 
-## 🔗 연관 주제
-- [[관련 문서 1]]
-- [[관련 문서 2]]
+## 🔗 Related Topics
+- [[Related Document 1]]
+- [[Related Document 2]]
 
-## 📚 참고 자료
-- [공식 문서](링크)
-- [추천 강의](링크)
+## 📚 References
+- [Official Documentation](link)
+- [Recommended Courses](link)
 ```
 
-### 2. 설명 방식
+### 2. Explanation Method
 
-- **점진적 설명**: 쉬운 개념 → 복잡한 개념
-- **시각적 보조**: 다이어그램, 표, 이모지 활용
-- **실용성 중심**: 이론보다 "어떻게 쓰는가"에 초점
-- **짧은 문단**: 한 문단은 3-4문장 이내
+- **Progressive Explanation**: Easy concepts → Complex concepts
+- **Visual Aids**: Utilize diagrams, tables, emojis
+- **Practicality-focused**: Focus on "how to use" rather than theory
+- **Short Paragraphs**: Each paragraph within 3-4 sentences
 
-### 3. 코드 예시 규칙
+### 3. Code Example Rules
 
 ```markdown
-✅ 좋은 예시:
-- 10줄 이내의 간단한 코드
-- 주석으로 각 줄 설명
-- 실행 결과 표시
+✅ Good Examples:
+- Simple code within 10 lines
+- Comments explaining each line
+- Show execution results
 
-❌ 피할 예시:
-- 복잡한 실제 프로덕션 코드
-- 설명 없는 긴 코드
-- 의존성이 많은 코드
+❌ Examples to Avoid:
+- Complex actual production code
+- Long code without explanations
+- Code with many dependencies
 ```
 
-## 🔄 작업 프로세스
+## 🔄 Work Process
 
-### 새로운 주제 추가 시
+### When Adding New Topics
 
-1. **주제 선정**
-   - 최근 학습한 내용 중 정리가 필요한 것
-   - 자주 헷갈리거나 잊어버리는 개념
-   - 면접에서 자주 나오는 질문
+1. **Topic Selection**
+   - Recent learning content that needs organization
+   - Concepts that are frequently confusing or forgotten
+   - Questions that often appear in interviews
 
-2. **자료 수집**
-   - 공식 문서 확인
-   - 실제 사용 경험 정리
-   - 관련 예시 코드 준비
+2. **Resource Collection**
+   - Check official documentation
+   - Organize actual usage experiences
+   - Prepare related example code
 
-3. **문서 작성**
-   - 위 템플릿에 맞춰 작성
-   - 초보자 관점에서 검토
-   - 예시와 비유 추가
+3. **Document Writing**
+   - Write according to the template above
+   - Review from a beginner's perspective
+   - Add examples and analogies
 
-4. **상호 참조**
-   - 관련 문서 링크 추가
-   - README.md 목차 업데이트
-   - 태그/카테고리 정리
+4. **Cross-referencing**
+   - Add related document links
+   - Update README.md table of contents
+   - Organize tags/categories
 
-### 기존 문서 개선 시
+### When Improving Existing Documents
 
-1. **가독성 향상**
-   - 복잡한 설명 단순화
-   - 더 나은 비유 찾기
-   - 시각적 요소 추가
+1. **Readability Enhancement**
+   - Simplify complex explanations
+   - Find better analogies
+   - Add visual elements
 
-2. **내용 보완**
-   - 최신 정보 업데이트
-   - 누락된 예시 추가
-   - 실전 팁 보강
+2. **Content Supplementation**
+   - Update with latest information
+   - Add missing examples
+   - Strengthen practical tips
 
-3. **오류 수정**
-   - 기술적 오류 바로잡기
-   - 오타 및 문법 수정
-   - 깨진 링크 수정
+3. **Error Correction**
+   - Fix technical errors
+   - Correct typos and grammar
+   - Fix broken links
 
-## 🎨 스타일 가이드
+## 🎨 Style Guide
 
-### 제목 규칙
+### Title Rules
 
-- 명확하고 검색하기 쉬운 제목
-- 한글 우선, 필요시 영문 병기
-- 예: "Redis 캐싱 전략" (O), "캐싱" (X)
+- Clear and searchable titles
+- Korean first, English notation when necessary
+- Example: "Redis Caching Strategy" (O), "Caching" (X)
 
-### 이모지 사용
+### Emoji Usage
 
-- 섹션 구분: 📌 📖 💻 ⚡ 🔗 📚
-- 강조: ✅ ❌ 💡 🎯 🤔
-- 과도한 사용 자제
+- Section separators: 📌 📖 💻 ⚡ 🔗 📚
+- Emphasis: ✅ ❌ 💡 🎯 🤔
+- Avoid excessive use
 
-### 코드 블록
+### Code Blocks
 
-- 언어 명시 필수
-- 적절한 하이라이팅
-- 복사하기 쉬운 형태
+- Language specification required
+- Appropriate highlighting
+- Easy-to-copy format
 
-## 🚫 하지 말아야 할 것
+## 🚫 Things to Avoid
 
-1. **지나친 전문 용어**
-   - 설명 없는 약어 사용
-   - 불필요한 영어 표현
-   - 학술적인 정의만 나열
+1. **Excessive Technical Jargon**
+   - Using abbreviations without explanation
+   - Unnecessary English expressions
+   - Listing only academic definitions
 
-2. **부정확한 정보**
-   - 검증되지 않은 내용
-   - 개인적 추측
-   - 구버전 정보
+2. **Inaccurate Information**
+   - Unverified content
+   - Personal speculation
+   - Outdated information
 
-3. **비실용적 내용**
-   - 실제로 쓰이지 않는 이론
-   - 지나치게 추상적인 설명
-   - 특정 환경에만 해당하는 내용
+3. **Impractical Content**
+   - Theory not used in practice
+   - Overly abstract explanations
+   - Content specific to particular environments
 
-## 📊 품질 체크리스트
+## 📊 Quality Checklist
 
-문서 작성 후 확인사항:
+Post-document writing checklist:
 
-- [ ] 제목이 내용을 잘 나타내는가?
-- [ ] 핵심 요약이 한 문장으로 명확한가?
-- [ ] 비개발자도 첫 단락은 이해 가능한가?
-- [ ] 코드 예시가 실행 가능한가?
-- [ ] 실전에서 바로 활용 가능한가?
-- [ ] 관련 주제 링크가 적절한가?
-- [ ] 맞춤법과 문법이 정확한가?
+- [ ] Does the title represent the content well?
+- [ ] Is the core summary clear in one sentence?
+- [ ] Can non-developers understand the first paragraph?
+- [ ] Are the code examples executable?
+- [ ] Can it be applied immediately in practice?
+- [ ] Are the related topic links appropriate?
+- [ ] Are spelling and grammar correct?
 
-## 🔍 자주 사용하는 명령어
+## 🔍 Frequently Used Commands
 
 ```bash
-# 새 문서 생성
-touch "개발/[카테고리]/[주제].md"
+# Create new document (current structure)
+touch "Development/[Topic].md"  # General document
+touch "Series/[SeriesName]/[SeriesName] [Number] : [Title].md"  # Series document
 
-# 문서 검색
-grep -r "검색어" .
+# Search documents
+grep -r "search term" .
 
-# 최근 수정 파일 확인
+# Check recently modified files
 find . -name "*.md" -mtime -7
 
-# 목차 자동 생성 (README.md 업데이트 시)
-# 수동으로 관리하거나 스크립트 활용
+# Create series directory
+mkdir -p "Series/[NewSeriesName]"
 ```
 
-## 💡 팁
+## 📌 Important Work Instructions
 
-1. **학습 직후 정리**: 배운 내용은 바로 정리하기
-2. **예시 중심**: 설명보다 예시가 더 효과적
-3. **지속적 개선**: 완벽한 첫 버전보다 꾸준한 업데이트
-4. **피드백 반영**: 다시 읽어보고 이해하기 어려운 부분 개선
+### Document Location Decision
 
-## 🎯 목표
+1. **Development/** - Standalone topic learning documents
+2. **Series/** - Multi-part series content (e.g., ElasticSearch series)
+3. **AI/Prompting/** - AI-related prompt engineering documents
 
-- 1년 후의 나도 이해할 수 있는 문서
-- 팀원에게 설명할 때 참고할 수 있는 자료
-- 면접 준비 시 빠르게 복습 가능한 정리
+### README.md Update
+
+Always add to README.md table of contents after creating new documents:
+
+- Development documents: Add to "Written Articles List" section
+- Series documents: Create new series section or add to existing series
+
+### File Naming Rules
+
+- General documents: `[TopicName].md` (e.g., `Redis.md`)
+- Series documents: `[SeriesName] [Number] : [Title].md` (e.g., `ElasticSearch 1 : Overview.md`)
+- Spaces allowed but be careful with special characters (`:` etc.) (Windows compatibility)
+
+### Markdown Lint Application
+
+- All documents follow [Markdown Lint](https://github.com/DavidAnson/markdownlint/tree/v0.38.0) rules.
+
+## 💡 Tips
+
+1. **Organize immediately after learning**: Document what you've learned right away
+2. **Example-focused**: Examples are more effective than explanations
+3. **Continuous improvement**: Consistent updates over perfect first versions
+4. **Incorporate feedback**: Read again and improve difficult-to-understand parts
+
+## 🎯 Goals
+
+- Documents that I can understand even after 1 year
+- References for explaining to team members
+- Organized content for quick review during interview preparation
 
 ---
 
-이 가이드를 따라 지속적으로 학습 내용을 정리하고 발전시켜 나가세요.
+Follow this guide to continuously organize and develop your learning content.
+
+## important-instruction-reminders
+
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
