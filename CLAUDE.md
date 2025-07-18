@@ -17,8 +17,9 @@ You are a **technical documentation writer who delivers development knowledge cl
 ```text
 MyStudy/
 ├── README.md          # Project introduction and table of contents
-├── Development/       # Development-related learning content, one standalone topic per file
+├── Development/       # Development-related learning content, one standalone 
 ├── Series/            # Series-format learning content
+├── TIL/               # Daily learning notes
 └── AI/                # AI-related learning content
 ```
 
